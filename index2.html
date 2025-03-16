@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misinformation Detector</title>
+    <link rel="stylesheet" href="">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-color: #f7f8f7;
+            color: white;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .misinfo {
+            margin: 15px 0;
+            padding: 15px;
+            background: #eaf5ea;
+            border-left: 5px solid #2E8B57;
+            text-align: left;
+        }
+
+        textarea {
+            width: 80%;
+            height: 80px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #adaeb0;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0ebbef;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .how-it-works {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .how-it-works img {
+            width: 50%;
+        }
+
+        .steps {
+            padding-left: 70px;
+        }
+
+        .steps h2 {
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        .step {
+            margin-top: 40px;
+        }
+
+        .step strong {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>"Verify the truth instantly with our AI-powered fact-checker – stop misinformation before it spreads!"</h1>
+        <p>Understand misinformation, its types, and how to prevent it.</p>
+    </header>
+    
+    <!-- AI Misinformation Scanner -->
+    <section id="scanner">
+        <h2>AI Fact-Check Scanner</h2>
+        <p>Enter a claim to check its credibility:</p>
+        <textarea id="claimInput" placeholder="Enter a claim (e.g., 'Drinking coffee causes cancer.')"></textarea>
+        <button onclick="checkClaim()">Check Claim</button>
+        <div id="result"></div>
+    </section>
+    
+    <div class="how-it-works">
+        <img src="https://virtualdoers.com/wp-content/uploads/2023/11/fake-news-graphic-1024x671.png" alt="Laptop">
+        <div class="steps">
+          <p> <h2>Why is Misinformation Dangerous?</h2>
+            <h3>🚨Misinformation can cause serious harm, such as:</h3><br>
+                <h3>1. Public Panic –</h3> News about natural disasters or pandemics can cause unnecessary fear.<br>
+                <h3>2. Health Risks –</h3> Misinformation about vaccines, medicines, or treatments can endanger lives.<br>
+                <h3>3. Political Manipulation –</h3> Fake news can influence elections or create social division.<br>
+                <h3>4. Financial Scams –</h3> Fraudulent investment schemes can mislead people into losing money.<br>
+                <h3>5. Social Division –</h3> Hate speech or false accusations can increase tensions between groups.
+            </p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
